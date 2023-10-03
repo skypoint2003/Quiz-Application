@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz2.css">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <!-- Add this code inside the <body> element of your HTML -->
+<div class="quiz-container">
+    <button id="start-button">Start Quiz</button>
+    <div id="quiz-content">
+        <div id="question-container">
+            <p>[Each question carries 2 marks]</p>
+            <h1 id="question"></h1>
+            <div id="options"></div>
+        </div>
+        <div id="score-container">
+            <p id="question-score"></p>
+            <p>Total Score: <span id="total-score">0</span></p>
+        </div>
+        <div id="timer-container">
+            <p>Time Left: <span id="timer">10</span> seconds</p>
+        </div>
+        <div id="message"></div>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </div>
+    <div id="results" style="display: none;">
+        <h1>Quiz Completed!</h1>
+        <div id="question-scores"></div>
+        <p>Total Score: <span id="final-score"></span></p>
+        <p id="final-message"></p>
+    </div>
+</div>
+
+    <script src="quiz2.js"></script>
+</body>
+</html>
